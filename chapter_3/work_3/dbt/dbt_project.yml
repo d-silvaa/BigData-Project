@@ -1,0 +1,4 @@
+name: 'dbt_driven_data' ##nombre de nuestro proyecto
+version: '1.0'
+profile: 'default' ##Aqui se le va a decir que conección usar
+model-paths: ["models"] ##Le indicamos donde estan los modelos de SQL con esta instrcuccion

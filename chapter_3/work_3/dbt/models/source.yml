@@ -1,0 +1,27 @@
+version : 2
+
+sources:
+  - name: raw_source #Bronze layer
+    database: airflow
+    squema : driven_raw
+    table: 
+      - name: raw_batch_data #Es la batch_first_load
+
+  - name: staging_source #Silver layer
+    database: airflow
+    shema: driven_staging
+    tables: 
+      - name: dim_address
+      - name: dim_date
+      - name: dim_finance
+      - name: dim_person
+      - name: fact_network_usages
+  
+  - name: trusted_source #Gold layer
+    database: airflowschema
+    schema: driven_trusted
+    tables: 
+      - name: payment_data
+      - name: technical_data
+      - name: non_pii_data
+      - name: pii_data

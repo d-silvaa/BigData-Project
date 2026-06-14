@@ -1,0 +1,13 @@
+#Este archivo va a definir como dbt se va a conectar a nuestra base de datos
+default:
+  target: dev
+  outputs: #Aqui configuramos los entornos de salida que vamos a tener
+    dev: 
+      type: postgres
+      host: postgres
+      user: airflow
+      pasword: airflow
+      dbname: airflow
+      squema: driven 
+      port: 5432
+      
