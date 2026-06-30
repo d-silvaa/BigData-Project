@@ -5,6 +5,6 @@ USER airflow
 #copy the requierements file into the container.
 COPY requirements.txt  .
 #install all dependencies from the rquierements file.
-RUN pip install -r requierements.txt
+RUN pip install -r requirements.txt
 #Xopy dbt directory into the container.
 COPY dbt /opt/airflow/dbt

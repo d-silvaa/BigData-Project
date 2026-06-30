@@ -6,8 +6,8 @@ default:
       type: postgres
       host: postgres
       user: airflow
-      pasword: airflow
+      password: airflow
       dbname: airflow
-      squema: driven 
+      schema: driven_raw
       port: 5432
       
