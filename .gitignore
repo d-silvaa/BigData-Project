@@ -1,0 +1,25 @@
+# --- Entornos Virtuales y Dependencias ---
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# --- Archivos de Sistema y Entorno ---
+.env
+.DS_Store
+.vscode/
+.idea/
+
+# No subas los logs de Airflow o del sistema
+logs/
+
+# --- Archivos de Base de Datos Locales ---
+# Si usas bases de datos locales tipo SQLite u otras persistencias
+*.db
+*.sqlite
+
+# --- Archivos temporales de DBT ---
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
